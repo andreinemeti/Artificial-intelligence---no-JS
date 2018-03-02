@@ -644,9 +644,37 @@ justify-content:center;	}
 
 }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width:991px) {
+	.landing-page:before {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+
+	.first-page.overlay:before {
+		clip-path: polygon(0 0, 100% 0, 0 100%);
+	}
+
+	.third-page:before {
+clip-path: polygon(100% 0, -61% 51%, 100% 100%);
+	}
+
+	.fourth-page.overlay:before {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    	}
+
+#purchase {
+	    margin-bottom: 50px;
+}
 
 }
+
+
+@media screen and (max-width:767px) {
+	.third-page:before {
+		clip-path: polygon(100% 0, 0% 31%, 100% 100%);
+	}
+}
+
+
 
 @media screen and (max-width: 431px) {
 
